@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Reference = require('../models/reference');
+const Reference = require('../models/Reference');
 
 // GET all references
 router.get('/', async (req, res) => {

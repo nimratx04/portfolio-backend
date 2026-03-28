@@ -17,12 +17,6 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/portfolio
 .then(() => console.log('MongoDB connected'))
 .catch(err => console.log('MongoDB connection error:', err));
 
-// Models
-const User = require('./models/user');
-const Project = require('./models/project');
-const Service = require('./models/service');
-const Reference = require('./models/reference');
-
 // Routes
 app.use('/api/users', require('./routes/users'));
 app.use('/api/projects', require('./routes/projects'));
